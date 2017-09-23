@@ -10,6 +10,35 @@ namespace Decisions
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Bob's Big Giveaway");
+            Console.Write("Choose a door: 1,2 or 3: ");
+            string userValue = Console.ReadLine();
+
+            if (userValue == "1")
+            {
+                string message = "You won a new car!";
+                Console.WriteLine(message);
+            }
+            else if (userValue == "2")
+            {
+                string message = "You won a new boat!";
+                Console.WriteLine(message);
+     
+            }
+            else if (userValue == "3")
+            {
+                string message = "You won a new Cat!";
+                Console.WriteLine(message);
+
+            }
+            else
+            {
+                string message = "sorry, we didn't understand";
+                Console.WriteLine(message);
+            }
+
+            Console.ReadLine();
+
         }
     }
 }
